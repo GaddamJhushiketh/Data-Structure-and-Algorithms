@@ -1,4 +1,5 @@
-#import 
+#import<iostream>
+using namespace std;
 class Solution {
 public:
     int sumOfDivisors(int n) {
