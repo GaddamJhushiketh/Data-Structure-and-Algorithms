@@ -15,6 +15,13 @@ public:
         return static_cast<int>(reversed);
     }
 };
-int main()
-{
-  
+int main() {
+    Solution solution;
+
+    // Test case 1: Positive number
+    int x1;
+    cin>>X1;
+    std::cout << "Reversed of " << x1 << " is: " << solution.reverse(x1) << std::endl;
+
+    return 0;
+}
