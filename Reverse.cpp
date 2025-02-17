@@ -1,4 +1,6 @@
+
 #include<iostream>
+#include <climits>
 using namespace std;
 class Solution {
 public:
@@ -17,10 +19,8 @@ public:
 };
 int main() {
     Solution solution;
-
-    // Test case 1: Positive number
     int x1;
-    cin>>X1;
+    cin>>x1;
     std::cout << "Reversed of " << x1 << " is: " << solution.reverse(x1) << std::endl;
 
     return 0;
