@@ -1,5 +1,6 @@
-#import<iostream>
+#include <iostream>
 using namespace std;
+
 class Solution {
 public:
     int sumOfDivisors(int n) {
@@ -18,3 +19,11 @@ public:
         return k;
     }
 };
+
+int main() {
+    Solution sol;
+    int n;
+    cin >> n;  // Input the value of n
+    cout << sol.sumOfDivisors(n) << endl;  // Output the result
+    return 0;
+}
