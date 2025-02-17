@@ -17,3 +17,19 @@ public:
         return original == reverse;
     }
 };
+int main() {
+    int num;
+    cout << "Enter the number: ";
+    cin >> num;
+
+    // Creating an object of Solution class and calling the isPalindrome method
+    Solution solution;
+    bool ret = solution.isPalindrome(num);
+
+    if(ret) {
+        cout << "true";
+    } else {
+        cout << "false";
+    }
+
+    return 0;
