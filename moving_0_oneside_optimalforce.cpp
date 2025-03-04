@@ -6,23 +6,25 @@ int main()
 	int n,j=0;
 	cout<<"Enter the size of array :";
 	cin>>n;
+	int e=n-1;
 	vector<int> arr(n);
 	cout<<"Enter the Elements in to array: ";
 	for(int i=0;i<n;i++)
 	{
 		cin>>arr[i];
 	}
-	for(int i=0;i<n;i++)
+	for(int i=n-1;i>=0;i--)
 	{
-	 for(int j=0;j<n;j++)
-	  {
-		if(arr[j]==0)
-		{
-		int temp=arr[i];
-		arr[i]=arr[j];
-		arr[j]=temp;
-	    }
-	  }
+	 if(arr[i]!=0)
+	 {
+	 	arr[e]=arr[i];
+	 	e--;
+	 }
+	}
+	while(e>=0)
+	{	
+		arr[e]=0;
+		e--;
 	}
 	for(int i=0;i<n;i++)
 	{
